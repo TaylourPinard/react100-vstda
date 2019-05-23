@@ -1,11 +1,4 @@
-// This is going to be the individual component that renders the todo item
-// it will have a text component which will be the todo, it will also have a
-// numerical value for its priority corresponding to the color of the item
-// each todo item will also have an edit button and a delete button on it
-// and a checkbox indicating whether or not the item has been completed
-// if the edit button is clicked we need to render an edit view for that 
-// item that has a textbox labelled Description, and a Priority dropdown,
-// as well as a save button that updates the values of the todo item
+// TODO: add checkbox functionality to edit whether or not a todo is completed
 
 import React, { Component } from 'react';
 import EditTodo from './EditTodo';
