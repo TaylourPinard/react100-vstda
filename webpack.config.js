@@ -3,6 +3,8 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, '/src'),
 
+  mode: 'production',
+
   entry: {
     javascript: './index'
   },
@@ -20,11 +22,11 @@ module.exports = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ['babel-loader'],
+        loader: ['babel-loader'],
       },
       {
         test: /\.html$/,
