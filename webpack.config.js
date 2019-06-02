@@ -32,4 +32,8 @@ module.exports = {
       },
     ],
   },
+
+  engines: {
+    node: '8.10.0'
+  }
 };
