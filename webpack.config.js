@@ -31,9 +31,5 @@ module.exports = {
         loader: 'file?name=[name].[ext]',
       },
     ],
-  },
-
-  engines: {
-    node: '8.10.0'
   }
 };
