@@ -1,8 +1,3 @@
-// this component will have a title that says Add a new Todo
-// have a form with a textbox labelled "I want to..." it will also have a
-// dropdown labelled Priorities that will set the priority value of the todo
-// and a button that will add the todo to the list of todos and clear the form
-
 import React, { Component } from 'react';
 
 class NewTodo extends Component {

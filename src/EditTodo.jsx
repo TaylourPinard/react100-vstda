@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class EditTodo extends Component {
   constructor(props){
     super(props);
@@ -12,12 +11,12 @@ class EditTodo extends Component {
   }
 
   onChange(e){
-    if(e.target.name == 'edit-todo-text'){
+    if(e.target.name == 'update-todo-text'){
       this.setState({
         createTodoText: e.target.value
       });
     }
-    if(e.target.name == 'edit-todo-priority'){
+    if(e.target.name == 'update-todo-priority'){
       this.setState({
         createTodoPriority: e.target.value
       });
@@ -29,19 +28,19 @@ class EditTodo extends Component {
       <div className="card">
         <div className="card-body">
           <div className="form-group">
-            <label htmlFor="edit-todo-text">Description</label>
-            <textarea onChange={this.onChange} className="edit-todo-text" name="edit-todo-text"></textarea>
-            <label htmlFor="edit-todo-priority">Priority</label>
+            <label htmlFor="update-todo-text">Description</label>
+            <textarea onChange={this.onChange} className="update-todo-text" name="update-todo-text"></textarea>
+            <label htmlFor="update-todo-priority">Priority</label>
             <select 
-              name="edit-todo-priority"
-              className="edit-todo-priority" 
+              name="update-todo-priority"
+              className="update-todo-priority" 
               onChange={this.onChange}>
               <option>Select a Priority</option>
               <option value='1'>Low Priority</option>
               <option value='2'>Medium Priority</option>
               <option value='3'>High Priority</option>
             </select>          
-            <button className="edit-todo btn btn-success pull-right"
+            <button className="update-todo btn btn-success pull-right"
               name="button"
               type="submit"
               onClick={() => this.props.submitEdit(this.state.createTodoText, this.state.createTodoPriority, this.props.id)}>Save

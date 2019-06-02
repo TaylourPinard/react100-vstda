@@ -1,6 +1,3 @@
-// this view will have the primary duty of displaying the list of todo
-// items it will have a header that says View Todos in a box and then
-// each todo item will be listed and passed props
 import React from "react";
 import TodoItem from './TodoItem';
 
